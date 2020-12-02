@@ -8,6 +8,8 @@ This template is prepared for bundling modules via Rollup in the browser.
 
 The bundled file can be used in AMD/Require, ES/CommonJS/Node, or non-module environments.
 
+[Fork on CodeSandbox](https://codesandbox.io/s/vibrant-austin-74req)
+
 ### `./src/module` is the entry point for the module you're developing.
 
 - Replace `./src/module/template.js` with your own entry file.
