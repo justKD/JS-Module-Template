@@ -1,6 +1,6 @@
 # JS-Module-Template
 
-##### v 1.0.0 | © Cadence Holmes 2020
+##### v 1.0.0 | © Cadence Holmes 2020 | MIT License
 
 Starter template for building JS modules.
 
