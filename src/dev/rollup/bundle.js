@@ -7,10 +7,12 @@
  */
 
 import * as Rollup from 'rollup';
+import cleanup from 'rollup-plugin-cleanup';
 
 const rollup = (url, filename, callback) => {
   Rollup.rollup({
     input: url,
+    plugins: [cleanup({ comments: 'none' })],
   })
     .then((rolled) => rolled.generate({ format: 'esm' }))
     .then((bundle) =>
