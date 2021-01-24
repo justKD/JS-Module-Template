@@ -1,7 +1,7 @@
 {
-  "name": "js-module-template",
-  "version": "1.0.0",
-  "description": "Starter template for building JS modules.\n\nThis template is prepared for bundling modules via Rollup in the browser.\n\nThe bundled file can be used in AMD/Require, ES/CommonJS/Node, or non-module environments.",
+  "name": "js-ts-module-template",
+  "version": "1.1.0",
+  "description": "Starter template for building JS or TS modules.\n\nThis template is prepared for bundling modules via Rollup in the browser.\n\nThe bundled file can be used in AMD/Require, ES/CommonJS/Node, or non-module environments.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -9,7 +9,12 @@
   },
   "devDependencies": {
     "@types/node": "14.14.6",
+    "typescript": "4.0.5",
     "prettier": "2.1.2"
+  },
+  "scripts": {
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"
   },
   "browserslist": [
     ">0.2%",

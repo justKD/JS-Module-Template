@@ -7,6 +7,9 @@
  * esm import, or as a non-module script.
  */
 
+/**
+ * Replace this import with the import from your module.
+ */
 import { template } from './template';
 
 /**
