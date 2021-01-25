@@ -8,7 +8,7 @@ This template is prepared for bundling modules via Rollup in the browser.
 
 The bundled file can be used in AMD/Require, ES/CommonJS/Node, or non-module environments.
 
-[Fork on CodeSandbox](https://codesandbox.io/s/vibrant-austin-74req)
+[Fork on CodeSandbox](https://codesandbox.io/)
 
 ### `./src/module` is the entry point for the module you're developing.
 
@@ -29,29 +29,42 @@ The bundled file can be used in AMD/Require, ES/CommonJS/Node, or non-module env
 - As an example, `module/template.ts` has already been manually bundled as `bundle.js` and the contents copied into the `/src/dist` folder as `template.js`.
 - `spec/template.spec.js` and `src/index.js` import the bundled module and use it.
 
-### Examples
+---
 
-#### ES / CommonJS / Node
+## Install
+
+`src/dist/template.bundle.js` can be added to your project in multiple ways:
 
 ```
-import { template } from "./dist/template.js";
+// CommonJS / ES / Node module
+// add to your module file
+
+import { template } from "template.bundle.js";
 console.log( template );
 ```
 
-#### AMD / Require
-
 ```
-require(["dist/template.js"], function(template) {
+// AMD / Require module
+// add to your module file
+
+require(["template.bundle.js"], function(template) {
   console.log( template );
 });
 ```
 
-#### Non-module / CDN
-
 ```
-<script src="dist/template.js"></script>
+// Non-module / CDN
+// add to your html file
+
+<script src="template.bundle.js"></script>
 <script>
   const template = window.kd.template;
   console.log( template );
 </script>
 ```
+
+## Basic Example
+
+## Extended Example
+
+## API
